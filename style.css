@@ -1,0 +1,41 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+@font-face{
+    font-family:pop;
+    src:url('poppins/Poppins-Regular.ttf');
+}
+
+body{
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    width:100%;
+    height:100vh;
+    font-family:pop;
+    text-transform:capitalize;
+}
+
+h1{
+    padding:2rem;
+    background-color: rebeccapurple;
+    color:white;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+.heart{
+    position:fixed;
+    top:-1vh;
+    transform:translateY(0);
+    font-size:2rem;
+    animation:fall 3s linear forwards;
+    z-index:2;
+}
+
+@keyframes fall{
+    to{transform:translateY(105vh)};
+}
